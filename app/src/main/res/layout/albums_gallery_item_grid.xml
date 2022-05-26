@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/thumb_empty_layer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="@drawable/app_list_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_textAlbumName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="17sp" android:textColor="@color/ColorAppTheme" android:layout_gravity="center_vertical" android:id="@+id/textAlbumName" android:layout_width="match_parent" android:layout_height="25dp" android:layout_marginLeft="10dp" android:layout_marginTop="6dp" android:layout_marginRight="10dp" android:layout_marginBottom="3dp" android:text="Photos" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/ll_thumimage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ll_textAlbumName">
+                <ImageView android:id="@+id/iv_album_thumbnil1" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginLeft="2.5dp" android:layout_marginRight="3.5dp"/>
+                <ImageView android:id="@+id/iv_album_thumbnil2" android:background="@color/ColorTumbnailbg" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginLeft="3.5dp" android:layout_marginRight="3.5dp"/>
+                <ImageView android:id="@+id/iv_album_thumbnil" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginLeft="2.5dp" android:layout_marginRight="3.5dp"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="100dp">
+                    <ImageView android:id="@+id/thumbImage" android:paddingLeft="4dp" android:paddingTop="4dp" android:paddingRight="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerHorizontal="true"/>
+                    <ImageView android:id="@+id/playthumbImage" android:paddingLeft="4dp" android:paddingTop="4dp" android:paddingRight="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_PhotoAlbums" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_below="@+id/iv_album_thumbnil1">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_DateTime" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:layout_weight="1.7">
+                        <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" android:textSize="9sp" android:textColor="@color/Color_Secondary_Font" android:ellipsize="marquee" android:gravity="start" android:layout_gravity="center_vertical" android:id="@+id/lbl_Date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Date: " android:singleLine="true" android:layout_weight="0.5" android:marqueeRepeatLimit="marquee_forever"/>
+                        <TextView android:textSize="9sp" android:textColor="@color/Color_Secondary_Font" android:gravity="start" android:layout_gravity="center_vertical" android:id="@+id/lbl_Time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginBottom="3dp" android:text="Time: " android:singleLine="true" android:layout_weight="0.5" android:marqueeRepeatLimit="marquee_forever"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="end" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_weight="0.3">
+                        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_counter" android:background="@drawable/sidemenu_count_bg" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp">
+                            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="12sp" android:textColor="@color/ColorWhite" android:id="@+id/lbl_Count" android:paddingLeft="1dp" android:paddingRight="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:maxEms="2" android:singleLine="true" android:layout_centerHorizontal="true" android:marqueeRepeatLimit="marquee_forever"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_selection" android:background="@drawable/album_grid_item_boarder_unselect" android:padding="1.5dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</RelativeLayout>

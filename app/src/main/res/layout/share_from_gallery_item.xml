@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/thumb_empty_layer">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/app_list_bg">
+
+            <LinearLayout
+                android:id="@+id/ll_textAlbumName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textAlbumName"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="Photos"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/ColorAppTheme"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_thumimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_textAlbumName">
+
+                <ImageView
+                    android:id="@+id/iv_album_thumbnil1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginRight="3.5dp" />
+
+                <ImageView
+                    android:id="@+id/iv_album_thumbnil2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginRight="3.5dp"
+                    android:background="@color/ColorTumbnailbg" />
+
+                <ImageView
+                    android:id="@+id/iv_album_thumbnil"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginRight="3.5dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:id="@+id/thumbImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:paddingLeft="4dp"
+                        android:paddingTop="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingBottom="4dp" />
+
+                    <ImageView
+                        android:id="@+id/playthumbImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="4dp"
+                        android:paddingTop="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingBottom="4dp"
+                        android:scaleType="fitXY" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_PhotoAlbums"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_album_thumbnil1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="invisible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:id="@+id/ll_DateTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_weight="1.7"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lbl_Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.5"
+                            android:gravity="left"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="Date: "
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                            android:textColor="@color/Color_Secondary_Font"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/lbl_Time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.5"
+                            android:gravity="start"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:text="Time: "
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                            android:textColor="@color/Color_Secondary_Font"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.3"
+                        android:gravity="end"
+                        android:paddingBottom="3dp"
+                        android:visibility="invisible">
+
+                        <RelativeLayout
+                            android:id="@+id/ll_counter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/sidemenu_count_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp">
+
+                            <TextView
+                                android:id="@+id/lbl_Count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:maxEms="2"
+                                android:paddingLeft="1dp"
+                                android:paddingRight="1dp"
+                                android:singleLine="true"
+                                android:text="0"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_selection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/album_grid_item_boarder_unselect"
+            android:orientation="vertical"
+            android:padding="1.5dp" />
+    </FrameLayout>
+</RelativeLayout>

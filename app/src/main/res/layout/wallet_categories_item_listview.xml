@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/fl_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/rl_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_walletIcon" android:background="@drawable/selector_feature_item" android:layout_width="70dp" android:layout_height="70dp" android:layout_margin="5dp">
+                <ImageView android:id="@+id/iv_walletCategoriesIcon" android:background="@drawable/ic_atm_card_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:id="@+id/ll_WalletCategoriesEntryCount" android:background="@drawable/sidemenu_count_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="12sp" android:textColor="@color/ColorWhite" android:id="@+id/tv_WalletCategoriesEntryCount" android:paddingLeft="1dp" android:paddingRight="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zero" android:maxEms="2" android:singleLine="true" android:layout_centerHorizontal="true" android:marqueeRepeatLimit="marquee_forever"/>
+                </RelativeLayout>
+                <TextView android:textSize="16sp" android:textColor="@color/ColorPrimaryDark" android:id="@+id/tv_WalletTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_div" android:background="@color/ColorAppTheme" android:layout_width="match_parent" android:layout_height="0.1dp" android:layout_marginTop="3dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_selection" android:background="@drawable/album_grid_item_boarder_unselect" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

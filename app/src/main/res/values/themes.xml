@@ -1,0 +1,126 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GalleryLock" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="ThemeOverlay_YourApp" parent="@style/Theme.Design.NoActionBar">
+        <item name="android:colorBackground">@color/ColorWhite</item>
+        <item name="android:textColor">@color/ColorAppTheme</item>
+        <item name="colorPrimary">@color/ColorPrimary</item>
+        <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
+    </style>
+    <style name="DialogNoAnimation">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+    <style name="AppTheme123" parent="@style/Theme.Design.NoActionBar">
+        <item name="android:itemBackground">@color/overflow_background</item>
+    </style>
+    <style name="EasyPermissions" parent="@style/Theme.Design.NoActionBar">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="EasyPermissions.Transparent" parent="@style/EasyPermissions">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="FullHeightDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme_Dark" parent="@style/Theme.AppCompat.NoActionBar">
+    </style>
+    <style name="menu_labels_style">
+        <item name="android:textColor">@color/ColorWhite</item>
+        <item name="android:background">@drawable/fab_label_background</item>
+    </style>
+    <style name="AppTheme_Dark_Blue" parent="@style/AppTheme_Dark">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/black_color</item>
+    </style>
+
+    <style name="AppTheme_Dark_Cyan" parent="@style/AppTheme_Dark">
+        <item name="colorPrimary">@color/cyan</item>
+        <item name="colorPrimaryDark">@color/cyan_dark</item>
+    </style>
+
+    <style name="AppTheme_Dark_Gray" parent="@style/AppTheme_Dark">
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorPrimaryDark">@color/gray_dark</item>
+    </style>
+
+    <style name="AppTheme_Dark_Green" parent="@style/AppTheme_Dark">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green_dark</item>
+    </style>
+
+    <style name="AppTheme_Dark_Indigo" parent="@style/AppTheme_Dark">
+        <item name="colorPrimary">@color/indigo</item>
+        <item name="colorPrimaryDark">@color/indigo_dark</item>
+    </style>
+
+    <style name="AppTheme_Dark_Purple" parent="@style/AppTheme_Dark">
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryDark">@color/purple_dark</item>
+    </style>
+
+    <style name="AppTheme_Dark_Red" parent="@style/AppTheme_Dark">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/red_dark</item>
+    </style>
+
+    <style name="AppTheme_Light" parent="@style/Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <style name="AppTheme_Light_Blue" parent="@style/AppTheme_Light">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/black_color</item>
+    </style>
+
+    <style name="AppTheme_Light_Cyan" parent="@style/AppTheme_Light">
+        <item name="colorPrimary">@color/cyan</item>
+        <item name="colorPrimaryDark">@color/cyan_dark</item>
+    </style>
+
+    <style name="AppTheme_Light_Gray" parent="@style/AppTheme_Light">
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorPrimaryDark">@color/gray_dark</item>
+    </style>
+
+    <style name="AppTheme_Light_Green" parent="@style/AppTheme_Light">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green_dark</item>
+    </style>
+
+    <style name="AppTheme_Light_Indigo" parent="@style/AppTheme_Light">
+        <item name="colorPrimary">@color/indigo</item>
+        <item name="colorPrimaryDark">@color/indigo_dark</item>
+    </style>
+
+    <style name="AppTheme_Light_Purple" parent="@style/AppTheme_Light">
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryDark">@color/purple_dark</item>
+    </style>
+
+    <style name="AppTheme_Light_Red" parent="@style/AppTheme_Light">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/red_dark</item>
+    </style>
+</resources>

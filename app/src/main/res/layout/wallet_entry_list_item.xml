@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/tv_entryListItemContainer" android:background="@color/Color_Menu_Thumb_Hover" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="15sp" android:textColor="@color/ColorAppTheme" android:id="@+id/tv_entryTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:text="@string/entry_field"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+        <EditText android:textSize="13sp" android:layout_gravity="center_vertical" android:id="@+id/et_entryValue" android:background="@drawable/white_et_curve_edge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:ems="10" android:layout_toLeftOf="@+id/cb_entryIsSecured" android:layout_alignParentLeft="true" android:inputType="textCapCharacters"/>
+        <CheckBox android:layout_gravity="center_vertical" android:id="@+id/cb_entryIsSecured" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/btn_import_checkbox" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

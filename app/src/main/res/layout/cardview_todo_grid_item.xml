@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/app_list_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="@color/Color_Secondary_Font" android:layout_gravity="center_vertical" android:id="@+id/tv_ToDoName" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="To Do" android:singleLine="true" android:layout_weight="1" android:marqueeRepeatLimit="marquee_forever"/>
+        <ImageView android:id="@+id/iv_toDoOptions" android:background="@drawable/ic_more_top_bar_icon" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/Color_Secondary_Font" android:id="@+id/tv_task1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginBottom="5dp" android:text="" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:textColor="@color/Color_Secondary_Font" android:layout_gravity="center_vertical" android:id="@+id/tv_task1c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="✓    "/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/Color_Secondary_Font" android:id="@+id/tv_task2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:textColor="@color/Color_Secondary_Font" android:layout_gravity="center_vertical" android:id="@+id/tv_task2c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="✓    "/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_inner" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/colorBorder" android:layout_width="5dp" android:layout_height="match_parent" android:layout_margin="5dp" android:layout_marginTop="2dp"/>
+        <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@+id/ll_DateTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_weight="1">
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="10sp" android:textColor="@color/Color_Secondary_Font" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tv_ToDoDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Date: " android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="10sp" android:textColor="@color/Color_Secondary_Font" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tv_ToDoTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="2dp" android:text="Time: " android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

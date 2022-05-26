@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="30dp" android:width="30dp" android:viewportWidth="66" android:viewportHeight="66">
+    <path android:name="Shape 37" android:fillColor="#fff" android:pathData="m33.33 4.33c15.83 0 28.67 12.83 28.67 28.67c0 15.83 -12.83 28.67 -28.67 28.67c-15.83 0 -28.67 -12.83 -28.67 -28.67c0 -15.83 12.83 -28.67 28.67 -28.67z"/>
+    <path android:name="back copy" android:fillColor="#7ebcdf" android:pathData="m47.39 32.65c-4.69 0 -8.53 3.85 -8.53 8.55c0 4.7 3.84 8.55 8.53 8.55c4.69 0 8.53 -3.85 8.53 -8.55c0 -4.7 -3.84 -8.55 -8.53 -8.55z"/>
+    <path android:name="back copy 2" android:fillColor="#78c97e" android:pathData="m21.56 32.65c-4.69 0 -8.53 3.85 -8.53 8.55c0 4.7 3.84 8.55 8.53 8.55c4.69 0 8.53 -3.85 8.53 -8.55c0 -4.7 -3.84 -8.55 -8.53 -8.55z"/>
+    <path android:name="back copy 3" android:fillColor="#fe5b5b" android:pathData="m42.53 19.7c0 -4.7 -3.84 -8.55 -8.53 -8.55c-4.69 0 -8.53 3.85 -8.53 8.55c0 4.7 3.84 8.55 8.53 8.55c4.69 0 8.53 -3.85 8.53 -8.55z"/>
+</vector>

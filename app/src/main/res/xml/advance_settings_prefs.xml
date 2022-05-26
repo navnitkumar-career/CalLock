@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cgollner.unclouded.preferences.SwitchPreferenceCompat android:title="@string/lblLockNewApp" android:key="lock_new_app" android:summary="@string/lblLockNewAppDesc"/>
+    <com.cgollner.unclouded.preferences.SwitchPreferenceCompat android:title="@string/lblDelayToLock" android:key="delay_lock" android:summary="@string/lblDelayToLockDesc"/>
+    <ListPreference android:entries="@array/delayTimeLimit" android:title="@string/lblDelaytimelimit" android:key="delay_lock_limit" android:summary="@string/lblUntilscreenislocked" android:entryValues="@array/delayTimeLimitValue"/>
+    <com.cgollner.unclouded.preferences.SwitchPreferenceCompat android:title="Advanced Lock" android:key="advanced_lock"/>
+</PreferenceScreen>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Coloractivity_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_anchor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/ll_topbaar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorAppTheme"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_top_bar_icon"
+            android:onClick="btnBackonClick" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_album_name_topbaar"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:singleLine="true"
+                android:text="Folder Name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ColorWhite"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <ImageButton
+                android:id="@+id/btnSort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/ic_more_top_bar_icon"
+                android:onClick="btnSortonClick" />
+
+            <ImageButton
+                android:id="@+id/btnSelectAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_select_files"
+                android:onClick="btnSelectAllonClick"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="invisible" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fl_bottom_baar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_EditPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:id="@+id/ll_delete_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bottom_baar_album"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/delete_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/ic_deletebtn" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_unhide_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bottom_baar_album"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/edit_unhide_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/ic_unhide" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_move_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bottom_baar_album"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/edit_move_btn"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mm" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_share_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bottom_baar_album"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/edit_share_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/edit_share_btn" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_AddPhotos_Bottom_Baar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/ll_import_from_gallery_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bottom_baar_album"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/import_from_gallery_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_wifi"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_import_wifi_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bottom_baar_album"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/import_wifi_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/import_wifi_btn" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_import_intenet_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bottom_baar_album"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/import_intenet_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/import_intenet_btn" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/ll_photo_video_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <GridView
+                android:id="@+id/customGalleryGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="60dp"
+                android:gravity="center"
+                android:horizontalSpacing="0dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="1"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_photo_video_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/photo_video_empty_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/ic_photo_empty_icon"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/lbl_photo_video_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="35dp"
+                android:singleLine="true"
+                android:text="No Photos yet"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/Color_Secondary_Font"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Add_Album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="end|bottom"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/frame_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <com.getbase.floatingactionbutton.FloatingActionsMenu
+                    android:id="@+id/fabMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:fab_addButtonColorNormal="@color/ColorAppTheme"
+                    app:fab_addButtonColorPressed="@color/white_pressed"
+                    app:fab_addButtonPlusIconColor="@color/ColorWhite"
+                    app:fab_addButtonSize="normal"
+                    app:fab_addButtonStrokeVisible="false"
+                    app:fab_expandDirection="up"
+                    app:fab_labelStyle="@style/menu_labels_style"
+                    app:fab_labelsPosition="left">
+
+                    <com.getbase.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btn_impGallery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fab_colorNormal="#fff"
+                        app:fab_colorPressed="@color/white_pressed"
+                        app:fab_icon="@drawable/ic_wifi"
+                        app:fab_size="normal"
+                        app:fab_title="Phone" />
+
+                    <com.getbase.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btn_impPcMac"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:visibility="gone"
+                        app:fab_colorNormal="#fff"
+                        app:fab_colorPressed="@color/white_pressed"
+                        app:fab_size="normal"
+                        app:fab_title="Pc/Mac" />
+
+                    <com.getbase.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btn_impBrowser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fab_colorNormal="#fff"
+                        app:fab_colorPressed="@color/white_pressed"
+                        app:fab_icon="@drawable/importintenetbtn"
+                        app:fab_size="normal"
+                        app:fab_title="Browser" />
+                </com.getbase.floatingactionbutton.FloatingActionsMenu>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

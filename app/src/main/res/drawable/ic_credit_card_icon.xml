@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="115dp" android:width="115dp" android:viewportWidth="115" android:viewportHeight="115">
+    <path android:name="Shape 3 copy 7" android:fillColor="#3fc6e4" android:pathData="m21.53 29.98h72.97c1.94 0 3.51 1.57 3.51 3.51v48.03c0 1.94 -1.57 3.51 -3.51 3.51h-72.97c-1.94 0 -3.51 -1.57 -3.51 -3.51v-48.03c0 -1.94 1.57 -3.51 3.51 -3.51z"/>
+    <path android:name="Shape 5 copy 15" android:fillColor="#ffce26" android:pathData="m18.04 38.98h79.9v12.12h-79.9v-12.12z"/>
+    <path android:name="Shape 3 copy 5" android:fillColor="#fff" android:pathData="m85.37 61.9c3.87 0 7.01 3.21 7.01 7.16c0 3.95 -3.14 7.16 -7.01 7.16c-3.87 0 -7.01 -3.21 -7.01 -7.16c0 -3.95 3.14 -7.16 7.01 -7.16z"/>
+    <path android:name="Shape 3" android:fillColor="#ff4e51" android:pathData="m75.37 61.9c3.87 0 7.01 3.21 7.01 7.16c0 3.95 -3.14 7.16 -7.01 7.16c-3.87 0 -7.01 -3.21 -7.01 -7.16c0 -3.95 3.14 -7.16 7.01 -7.16z"/>
+</vector>

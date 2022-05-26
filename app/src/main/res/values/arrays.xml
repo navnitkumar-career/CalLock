@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="delayTimeLimit">
+        <item>Until Screen Locked</item>
+        <item>15 Seconds</item>
+        <item>30 Seconds</item>
+        <item>1 Minute</item>
+        <item>3 Minute</item>
+        <item>5 Minute</item>
+    </array>
+    <array name="delayTimeLimitValue">
+        <item>@null</item>
+        <item>15</item>
+        <item>30</item>
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+    </array>
+    <array name="wallet_drawables_list">
+        <item>@null</item>
+        <item>@drawable/ic_credit_card_icon</item>
+        <item>@drawable/ic_atm_card_icon</item>
+        <item>@drawable/ic_bank_account_icon</item>
+        <item>@drawable/ic_business_card_icon</item>
+        <item>@drawable/ic_licence_card_icon</item>
+        <item>@drawable/ic_email_accounts_icon</item>
+        <item>@drawable/ic_social_network_icon</item>
+        <item>@drawable/ic_general_card_icon</item>
+        <item>@drawable/ic_e_commerce_icon</item>
+        <item>@drawable/ic_health_icon</item>
+        <item>@drawable/ic_insurance_icon</item>
+        <item>@drawable/ic_web_account_icon</item>
+        <item>@drawable/ic_id_card_icon</item>
+        <item>@drawable/ic_passport_icon</item>
+    </array>
+</resources>

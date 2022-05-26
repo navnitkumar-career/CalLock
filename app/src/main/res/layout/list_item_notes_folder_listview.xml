@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/ll_thumimage" android:background="@drawable/app_list_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_notesFolder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/colorBorder" android:layout_width="5dp" android:layout_height="match_parent"/>
+                <ImageView android:id="@+id/iv_notesFolder" android:background="@drawable/ic_notesfolder_empty_thumb_icon" android:layout_width="65dp" android:layout_height="65dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_iv_notesFolder" android:layout_width="180dp" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_toRightOf="@+id/ll_notesFolder" android:layout_centerVertical="true">
+                <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="15sp" android:textColor="@color/Color_Menu_Thumb_Font" android:layout_gravity="center_vertical" android:id="@+id/tv_FolderName" android:layout_width="match_parent" android:layout_height="25dp" android:layout_marginLeft="5dp" android:layout_marginTop="6dp" android:text="Notes Folder" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+                <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@+id/ll_DateTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp">
+                    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="10sp" android:textColor="@color/Color_Secondary_Font" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tv_NoteFolderDate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Date: " android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+                    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="10sp" android:textColor="@color/Color_Secondary_Font" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tv_NoteFolderTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="2dp" android:text="Time: " android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+                    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="10sp" android:textColor="@color/Color_Secondary_Font" android:id="@+id/tv_noteFolder_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="2dp" android:text="Size"/>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_noteFolder_count" android:background="@drawable/sidemenu_count_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="15dp" android:layout_marginBottom="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="12sp" android:textColor="@color/ColorWhite" android:id="@+id/tv_NotesCount" android:paddingLeft="1dp" android:paddingRight="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:maxEms="2" android:singleLine="true" android:layout_centerHorizontal="true" android:marqueeRepeatLimit="marquee_forever"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:id="@+id/tv_NoteContent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_selection" android:background="@drawable/album_grid_item_boarder_unselect" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</RelativeLayout>
